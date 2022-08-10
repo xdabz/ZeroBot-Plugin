@@ -202,8 +202,7 @@ func init() {
 
 	// 通过代码写死的方式添加主人账号
 	// sus = append(sus,562722975)
-	// sus = append(sus, 87654321)
-
+	
 	if *runcfg != "" {
 		f, err := os.Open(*runcfg)
 		if err != nil {
@@ -225,7 +224,7 @@ func init() {
 
 	config.W = []*driver.WSClient{driver.NewWebSocketClient(*url, *token)}
 	config.Z = zero.Config{
-		NickName:      append([]string{*adana}, "Alice", "小爱"),
+		NickName:      append([]string{*adana}, "Alice", "小爱丽丝"),
 		CommandPrefix: *prefix,
 		SuperUsers:    sus,
 		Driver:        []zero.Driver{config.W[0]},
