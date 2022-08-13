@@ -201,7 +201,7 @@ func init() {
 	}
 
 	// 通过代码写死的方式添加主人账号
-	sus = append(sus,562722975)
+	sus = append(sus, 562722975)
 
 	if *runcfg != "" {
 		f, err := os.Open(*runcfg)
