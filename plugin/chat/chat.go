@@ -99,7 +99,7 @@ func init() { // 插件主体
 			} else {
 				ctx.SendChain(message.Text(
 					"💤", "\n",
-					"群温度 ", AirConditTemp[ctx.Event.GroupID], "℃",
+					"温度 ", AirConditTemp[ctx.Event.GroupID], "℃",
 				))
 			}
 		})
